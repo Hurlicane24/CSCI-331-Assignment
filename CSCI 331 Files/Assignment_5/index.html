@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Algebraic Structure Example</h1>
+    <form id="form1" action="scripts/form-viewer.php" method="GET">
+        <fieldset>
+            <legend>Properties of Set With Operation 1</legend>
+            <h3>Operation 1:</h3>
+            <div id="radioSet1">
+                <input type="radio" name="operation1" id="rb1" value="+">
+                <label for="rb1">+</label>
+                <br>
+                <input type="radio" name="operation1" id="rb2" value="x">
+                <label for="rb2">&times;</label>
+            </div>
+            <br>
+            <br>
+            <h3>Properties:</h3>
+            <div id="checkSet1">
+                <input type="checkbox" name="associative1" id="cb1">
+                <label for="cb1">Associative</label>
+                <br>
+                <input type="checkbox" name="identity_exists1" id="cb2">
+                <label for="cb2">Identity elements exists</label>
+                <br>
+                <input type="checkbox" name="inverses_exist1" id="cb3">
+                <label for="cb3">Inverses exist</label>
+                <br>
+                <input type="checkbox" name="closed1" id="cb4">
+                <label for="cb4">Set is closed</label>               
+            </div>      
+            <br>
+            <br>
+            <h3>Additional Properties</h3>
+            <div id="multiSelect1">
+                <label for="additional_properties1[]">Extra Properties:</label>
+                <select name="additional_properties1[]" id="additional1" size ="2" multiple>
+                    <option value="commutative">commutative</option>
+                    <option value="cyclic">cyclic</option>
+                </select>
+            </div> 
+            <br>
+        </fieldset>
+        <br>
+        <h2>If the set is only equipped with one operation, select none. Do not choose the same operation you chose above.</h2>
+        <fieldset>
+            <legend>Properties of Set With Operation 2</legend>
+            <h3>Operation 2:</h3>
+            <div id="radioSet2">
+                <input type="radio" name="operation2" id="rb3" value="+">
+                <label for="rb3">+</label>
+                <br>
+                <input type="radio" name="operation2" id="rb4" value="x">
+                <label for="rb4">&times;</label>
+                <br>
+                <input type="radio" name="operation2" id="rb5" value="None">
+                <label for="rb5">None</label>                
+            </div>
+            <br>
+            <h3>Properties:</h3>
+            <div id="checkSet2">
+                <input type="checkbox" name="associative2" id="cb5">
+                <label for="cb5">Associative</label>
+                <br>
+                <input type="checkbox" name="identity_exists2" id="cb6">
+                <label for="cb6">Identity elements exists</label>
+                <br>
+                <input type="checkbox" name="inverses_exist2" id="cb7">
+                <label for="cb7">Inverses exist</label>
+                <br>
+                <input type="checkbox" name="closed2" id="cb8">
+                <label for="cb8">Set is closed</label>              
+            </div>        
+            <br>
+            <br>
+            <h3>Additional Properties:</h3>
+            <div id="multiSelect2">
+                <label for="additional_properties2[]">Extra Properties:</label>
+                <select name="additional_properties2[]" id="additional2" size ="2" multiple>
+                    <option value="commutative">commutative</option>
+                    <option value="cyclic">cyclic</option>
+                </select>
+            </div>    
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="experience">How experienced are you with abstract algebra?:</label>
+            <select name="experience" id="exp">
+                <option value="not experienced">not experienced</option>
+                <option value="somewhat experience">somewhat experienced</option>
+                <option value="very experienced">very experienced</option>
+            </select>
+            <br>
+            <br>
+            <label for="Feedback">Any Feedback?:</label>
+            <input type="text" name="Feedback">
+        </fieldset>
+
+        <h3>
+            Send with: 
+            <span id="method">Get</span>
+        </h3>
+
+        <div id="getOrPost">
+            <input type="radio" name="send_method" id="get" value="GET" checked>
+            <label for="get">GET</label>
+            <input type="radio" name="send_method" id="post" value="POST">
+            <label for="post">POST</label>
+        </div>
+        <br>
+        <input type="submit" value="Determine Algebraic Structure">
+    </form>
+    <script src="scripts/user_error.js"></script>
+</body>
+</html>
